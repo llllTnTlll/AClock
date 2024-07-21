@@ -47,6 +47,16 @@ Item{
         }
     }
 
+    PropertyAnimation{
+        id: drawAnimation
+        target: gaugesItem
+        property: "progressPercent"
+        from: 0
+        to:0
+        duration: 300
+        easing.type: Easing.InOutQuad
+    }
+
     onTrhoughColorChanged: canvas.requestPaint()
     onTrhoughThicknessChanged: canvas.requestPaint()
     onTrhoughRadiusChanged: canvas.requestPaint()
@@ -56,7 +66,10 @@ Item{
 
     function setPercentage(value:int){
         if(0 <= value <= 100){
-            gaugesItem.progressPercent = value
+            drawAnimation.from = progressPercent
+            drawAnimation.to = value
+            drawAnimation.start()
+            // gaugesItem.progressPercent = value
         }
     }
 }
