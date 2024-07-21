@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/icon">
+        <file>img/menuIcon_charts.svg</file>
+        <file>img/menuIcon_exit.svg</file>
+        <file>img/menuIcon_settings.svg</file>
+    </qresource>
+    <qresource prefix="/screen">
+        <file>ChartScreen.qml</file>
+    </qresource>
+    <qresource prefix="/widgets">
+        <file>Gauges.qml</file>
+    </qresource>
+</RCC>

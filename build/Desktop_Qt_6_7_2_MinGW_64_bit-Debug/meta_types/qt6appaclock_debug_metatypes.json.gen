@@ -1,0 +1,56 @@
+[
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "CpuWatcher",
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "currentCpuUsage",
+                        "notify": "currentCpuUsageChanged",
+                        "read": "currentCpuUsage",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false,
+                        "write": "setCurrentCpuUsage"
+                    }
+                ],
+                "qualifiedClassName": "CpuWatcher",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "currentCpuUsageChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "public",
+                        "name": "updateCpuProperty",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "helper.h",
+        "outputRevision": 68
+    }
+]
