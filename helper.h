@@ -4,7 +4,7 @@
 #include <QObject>
 #include <QTimer>
 #include <QQmlEngine>
-#include <random>
+#include <windows.h>
 
 class CpuWatcher : public QObject
 {
@@ -19,7 +19,7 @@ public:
         // 启动一个定时器
         QTimer *timer = new QTimer(this);
         connect(timer, &QTimer::timeout, this, &CpuWatcher::updateCpuProperty);
-        timer->start(2000);
+        timer->start(1000);
     }
 
     int currentCpuUsage(){
@@ -33,6 +33,11 @@ public:
 
 private:
     int currentUsage=0;
+    FILETIME preIdleTime, preKernelTime, preUserTime;
+
+    double getCpuUsage();
+    __int64 FileTimeToInt64(const FILETIME &ftime);
+
 signals:
     void currentCpuUsageChanged();
     // void cpuValueChanged(int cpuValue);

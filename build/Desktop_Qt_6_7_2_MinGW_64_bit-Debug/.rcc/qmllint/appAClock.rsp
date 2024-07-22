@@ -1,10 +1,10 @@
 --bare
 -I
-D:/work/qt/AClock/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug
+C:/Users/zhiyuan/Desktop/program/AClock/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug
 -I
-D:/mySoftware/qtDesignStudio/6.7.2/mingw_64/./qml
+C:/qtStudio/6.7.2/mingw_64/./qml
 --resource
-D:/work/qt/AClock/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/rcc/qmake_AClock.qrc
+C:/Users/zhiyuan/Desktop/program/AClock/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/rcc/qmake_AClock.qrc
 --resource
-D:/work/qt/AClock/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/rcc/appAClock_raw_qml_0.qrc
-D:/work/qt/AClock/Main.qml
+C:/Users/zhiyuan/Desktop/program/AClock/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/rcc/appAClock_raw_qml_0.qrc
+C:/Users/zhiyuan/Desktop/program/AClock/Main.qml

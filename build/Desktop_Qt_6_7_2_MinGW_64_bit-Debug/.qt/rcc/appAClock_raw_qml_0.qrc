@@ -1,7 +1,7 @@
 <RCC>
   <qresource prefix="/AClock/">
-    <file alias="Main.qml">D:/work/qt/AClock/Main.qml</file>
-    <file alias="res.qrc">D:/work/qt/AClock/res.qrc</file>
+    <file alias="Main.qml">C:/Users/zhiyuan/Desktop/program/AClock/Main.qml</file>
+    <file alias="res.qrc">C:/Users/zhiyuan/Desktop/program/AClock/res.qrc</file>
   </qresource>
 </RCC>
 
