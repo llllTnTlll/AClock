@@ -1,0 +1,12 @@
+SET(SOURCES ui_dormancyScreen.c
+    ui_clockScreen.c
+    ui_weatherScreen.c
+    ui_airQualityScreen.c
+    ui.c
+    ui_comp_hook.c
+    ui_helpers.c
+    ui_img_sensor_png.c
+    ui_img_clock_png.c
+    ui_img_1407854121.c)
+
+add_library(ui ${SOURCES})
