@@ -1,5 +1,7 @@
 #include <inputdevice.hpp>
 
+unsigned long Button::lastBtnResponse = millis();    
+
 Button::Button(uint16_t pinIndex)
 {
     this->pinIndex = pinIndex;
@@ -40,8 +42,8 @@ ButtonStatus Button::Check()
 
                 if (pressDuration < 500)
                 {
-                    Serial.println("短按");
                     status = PRESSED;
+                    lastBtnResponse = millis();
                 }
                 isLongPressing = false; // 重置长按标志
             }
@@ -52,11 +54,13 @@ ButtonStatus Button::Check()
     if (buttonState == LOW && (millis() - pressedTime) >= 500 && !isLongPressing)
     {
         status = LONG_PRESSED;
+        lastBtnResponse = millis();
         isLongPressing = true; // 标记为长按
     }
     else if (buttonState == LOW && isLongPressing)
     {
         status = LONG_PRESSING;
+        lastBtnResponse = millis();
     }
 
     // 更新上一次按键状态

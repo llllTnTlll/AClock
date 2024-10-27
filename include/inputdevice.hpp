@@ -1,3 +1,6 @@
+#ifndef INPUTDEVICE_HPP
+#define INPUTDEVICE_HPP
+
 #include <Arduino.h>
 #include <vector>
 
@@ -21,10 +24,17 @@ private:
     unsigned long pressedTime = 0;      // 按键按下的时间
     bool isLongPressing = false;        // 用于标记是否正在长按
 
+    static unsigned long lastBtnResponse;
+
 public:
     Button(uint16_t pinIndex);
     ButtonStatus Check();
+
+    static unsigned long getLastPressedTime()
+    {
+        return Button::lastBtnResponse;
+    }
 };
 
 
-
+#endif

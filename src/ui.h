@@ -30,11 +30,15 @@ void menuDownAnim_Animation(lv_obj_t * TargetObject, int delay);
 void showSideMenu_Animation(lv_obj_t * TargetObject, int delay);
 void menuReachTop_Animation(lv_obj_t * TargetObject, int delay);
 void menuReachBottom_Animation(lv_obj_t * TargetObject, int delay);
+void menuHide_Animation(lv_obj_t * TargetObject, int delay);
+void menuShow_Animation(lv_obj_t * TargetObject, int delay);
+void contentFade_Animation(lv_obj_t * TargetObject, int delay);
+void contentShow_Animation(lv_obj_t * TargetObject, int delay);
 // SCREEN: ui_dormancyScreen
 void ui_dormancyScreen_screen_init(void);
 void ui_event_dormancyScreen(lv_event_t * e);
 extern lv_obj_t * ui_dormancyScreen;
-extern lv_obj_t * ui_timeLabel;
+extern lv_obj_t * ui_timeLabel1;
 extern lv_obj_t * ui_Label11;
 extern lv_obj_t * ui_Container1;
 extern lv_obj_t * ui_Panel4;
@@ -52,20 +56,66 @@ extern lv_obj_t * ui_Panel5;
 // SCREEN: ui_clockScreen
 void ui_clockScreen_screen_init(void);
 extern lv_obj_t * ui_clockScreen;
-extern lv_obj_t * ui_Label2;
-extern lv_obj_t * ui_Arc1;
+extern lv_obj_t * ui_timeLabel2;
+extern lv_obj_t * ui_timeSecArc;
 // SCREEN: ui_weatherScreen
 void ui_weatherScreen_screen_init(void);
 extern lv_obj_t * ui_weatherScreen;
+extern lv_obj_t * ui_Label5;
+extern lv_obj_t * ui_Container6;
+extern lv_obj_t * ui_Container12;
+extern lv_obj_t * ui_Label22;
+extern lv_obj_t * ui_Image15;
+extern lv_obj_t * ui_Label21;
+extern lv_obj_t * ui_Container11;
+extern lv_obj_t * ui_tempRangeLabel;
+extern lv_obj_t * ui_currentTempLabel;
+extern lv_obj_t * ui_feelsTempLabel;
+extern lv_obj_t * ui_sunraiseTimeLabel;
+extern lv_obj_t * ui_sunsetTimeLabel;
+extern lv_obj_t * ui_Panel6;
+extern lv_obj_t * ui_uviArc;
+extern lv_obj_t * ui_sunArc;
+extern lv_obj_t * ui_Container4;
+extern lv_obj_t * ui_Container5;
+extern lv_obj_t * ui_Label8;
+extern lv_obj_t * ui_Image10;
+extern lv_obj_t * ui_Label14;
+extern lv_obj_t * ui_Container7;
+extern lv_obj_t * ui_Label4;
+extern lv_obj_t * ui_Image2;
+extern lv_obj_t * ui_Label23;
+extern lv_obj_t * ui_Container8;
+extern lv_obj_t * ui_Label9;
+extern lv_obj_t * ui_Image6;
+extern lv_obj_t * ui_Label24;
+extern lv_obj_t * ui_Container9;
+extern lv_obj_t * ui_Label10;
+extern lv_obj_t * ui_Image7;
+extern lv_obj_t * ui_Label25;
+extern lv_obj_t * ui_Container10;
+extern lv_obj_t * ui_Label12;
+extern lv_obj_t * ui_Image8;
+extern lv_obj_t * ui_Label26;
+extern lv_obj_t * ui_Label15;
+extern lv_obj_t * ui_Label20;
 // SCREEN: ui_airQualityScreen
 void ui_airQualityScreen_screen_init(void);
 extern lv_obj_t * ui_airQualityScreen;
+extern lv_obj_t * ui_Label19;
+// SCREEN: ui_clockScreen1
+void ui_clockScreen1_screen_init(void);
+extern lv_obj_t * ui_clockScreen1;
+extern lv_obj_t * ui_Container3;
+extern lv_obj_t * ui_Panel7;
+extern lv_obj_t * ui_Label1;
 extern lv_obj_t * ui____initial_actions0;
 
 
 LV_IMG_DECLARE(ui_img_sensor_png);    // assets/Sensor.png
 LV_IMG_DECLARE(ui_img_clock_png);    // assets/Clock.png
-LV_IMG_DECLARE(ui_img_1407854121);    // assets/cloud-sun.png
+LV_IMG_DECLARE(ui_img_01_sunny_png);    // assets/01_sunny.png
+LV_IMG_DECLARE(ui_img_02_fewcloud_png);    // assets/02_fewCloud.png
 
 
 

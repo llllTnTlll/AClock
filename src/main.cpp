@@ -83,20 +83,11 @@ void my_keyboard_read(lv_indev_t *indev, lv_indev_data_t *data)
   }
 }
 
-
 // /*Set tick routine needed for LVGL internal timings*/
-
 
 void setup()
 {
   Serial.begin(115200); /* prepare for possible serial debug */
-
-  String LVGL_Arduino = "Hello Arduino! ";
-  LVGL_Arduino += String('V') + lv_version_major() + "." + lv_version_minor() + "." + lv_version_patch();
-
-  Serial.println(LVGL_Arduino);
-  Serial.println("I am LVGL_Arduino");
-
   lv_init();
 
 #if LV_USE_LOG != 0
@@ -120,8 +111,6 @@ void setup()
   lv_indev_set_type(indev, LV_INDEV_TYPE_KEYPAD);
   lv_indev_set_read_cb(indev, my_keyboard_read);
 
-  Serial.println("Setup done");
-
   ui_init();
 
   // 初始化系统
@@ -130,5 +119,5 @@ void setup()
 
 void loop()
 {
-
+  
 }
